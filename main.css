@@ -1,0 +1,293 @@
+/* css reset : start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset : end */
+
+/* style : start */
+body {
+	background-color: #3a6ea5;
+	font: 14px/16px arial, sans-serif;
+	color: #f2f3f4;
+        height: 1000px;
+}
+	/* taskbar : topbar startnav startico, starttext / lmenubar$, cmenubar, rmenubar, endnav volumecontrol volumeico / today, showdesktop */
+	.topbar {
+        position: fixed;
+        z-index: 99;
+		outline: 1px outset #eceae7;
+		border: 1px outset #eceae7;
+		background-color: #d4d0c8;
+		width: 100%;
+		height: 27px;
+		padding: 1px;
+	}
+        .startnav {
+            position: absolute;
+            left: 1px;
+            display: inline-block;
+            border: 1px outset #eceae7;
+            background-color: #d4d0c8;
+            width: 60px;
+            height: 25px;
+            padding: 0 3px;
+            text-decoration: none;
+            color: #000;
+        }
+            .startico {
+                padding: 3px 0 0 0;
+                height: 19px;
+            }
+            .starttext {
+                position: relative;
+                top: -5px;
+            }
+        .startnav:hover {
+            opacity: 92%;
+            color: rgba(0, 0, 0, 0.84);
+        }
+            .startico:hover {
+                opacity: 84%;
+            }
+            .starttext:hover {
+                opacity: 67%;
+            }
+        .startnav:active {
+            border: 1px inset #eceae7;
+            background-color: rgba(0, 0, 0, 0.06);
+        }
+        .lmenubar {
+            position: absolute;
+            left: 76px;
+        }
+            .menubar {
+                display: inline-block;
+                border: 1px solid transparent;
+                height: 25px;
+                line-height: 25px;
+                padding: 0 3px;
+                text-decoration: none;
+                color: #454545;
+            }
+            .menubar:hover {
+                color: #787878;
+            }
+            .menubar:active {
+                border: 1px inset #eceae7;
+            }
+        .cmenubar {
+            position: absolute;
+            left: 43%;
+        }
+        .rmenubar {
+            position: absolute;
+            right: 104px;
+        }
+            .volumecontrol {
+                position: absolute;
+                right: 72px;
+                display: inline-block;
+                border: 1px solid transparent;
+                height: 19px;
+                padding: 3px;
+                text-decoration: none;
+            }
+                .volumeico {
+                    height: 19px;
+                }
+            .today {
+                position: absolute;
+                right: 24px;
+                display: inline-block;
+                border: 1px solid transparent;
+                height: 25px;
+                line-height: 25px;
+                padding: 0 3px;
+                text-decoration: none;
+                color: #000;
+            }
+            .showdesktop {
+                position: absolute;
+                right: 12px;
+                display: inline-block;
+                border: 1px outset #eceae7;
+                height: 25px;
+                padding: 0 3px;
+                text-decoration: none;
+            }
+            .showdesktop:hover {
+                opacity: 50%;
+            }
+            .showdesktop:active {
+                border: 1px inset #eceae7;
+            }
+	/* taskbar : end */
+	/* desktop : spacetaskbar, lsidebar */
+	.spacetaskbar {
+		height: 30px;
+	}
+	.lsidebar {
+		padding: 20px;
+	}
+	/* dekstop : end */
+	/* program : container home headtask titletask / terminal headhome */
+	.container {
+
+	}
+		.home {
+			position: absolute;
+			top: 66px;
+			left: 16%;
+			width: 66%;
+			max-width: 640px;
+			border: 2px outset #eceae7;
+			background-color: #d4d0c8;
+			padding: 1px;
+		}
+			.headtask {
+				border-bottom: 2px solid #d4d0c8;
+				background: linear-gradient(to right, #0a246a 0%, #a6caf0 100%, #a6caf0 101%);
+				padding: 4px;
+				font-size: 14px;
+				color: #f2f3f4;
+			}
+				.homeico {
+					height: 10px;
+				}
+				.titletask {
+					display: inline-block;
+				}
+				.homemng {
+					float: right;
+					display: inline-block;
+				}
+					.homeminimize {
+						display: inline-block;
+						text-decoration: none;
+						width: 15px;
+						height: 15px;
+						border: 1px outset #eceae7;
+						line-height: 15px;
+						text-align: center;
+						background: #d4d0c8;
+						color: #454545;
+					}
+
+					.homesize {
+						display: inline-block;
+						width: 15px;
+						height: 15px;
+						border: 1px outset #d4d0c8;
+						line-height: 15px;
+						text-align: center;
+						background: #afafaf;
+						color: #d4d0c8;
+					}
+						.sz {
+							display: inline-block;
+							width: 7px;
+							height: 7px;
+							border: 1px inset #d4d0c8;
+						}
+					.homeclose {
+						display: inline-block;
+						text-decoration: none;
+						width: 15px;
+						height: 15px;
+						border: 1px outset #eceae7;
+						line-height: 15px;
+						text-align: center;
+						background: #d4d0c8;
+						color: #454545;
+					}
+					.homeminimize:hover {
+						color: #909090;
+					}
+					.homeclose:hover {
+						color: #909090;
+					}
+					.homeminimize:active {
+						border: 1px inset #eceae7;
+					}
+					.homeclose:active {
+						border: 1px inset #eceae7;
+					}
+			.terminal {
+				border: 2px inset #eceae7;
+				background-color: #141414;
+				padding: 20px;
+				font-family: Consolas, 'Courier New', monospace;
+				color: #f2f3f4;
+				overflow: scroll;
+			}
+
+				.hnav .tnav {
+				}
+
+					.viewas {
+						color: #8AE234;
+					}
+
+					.pwd {
+						color: #729FCF;
+					}
+
+				.terminal ul {
+					margin-top: 5px;
+				}
+
+					.terminal li {
+						display: inline-block;
+						margin-right: 5px;
+					}
+
+						.terminal a {
+							text-decoration: none;
+							color: #729FCF;
+						}
+
+						.terminal a:hover {
+							color: #f2f3f4;
+						}
+
+/* style : end */
